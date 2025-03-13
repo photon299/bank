@@ -1,0 +1,212 @@
+
+.header {
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(39, 73, 213);
+    font-size: 30px;
+}
+.wrapper {
+    width: auto;
+    height: 600px;
+    margin: 0 20px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 230, 255);
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+}
+.choose__modal {
+    width: 500px;
+    height: 200px;
+    background-color: #deffbe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons__wrapper {
+    right: 25%;
+    display: flex;
+    width: 420px;
+    display: flex;
+    justify-content:space-between;
+}
+.buttons__wrapper button {
+    margin-top: 0;
+    font-size: 15px;
+}
+.modalBtnsWrapp {
+    /* margin-top: 400px; */  
+    width: 360px;
+}
+button {
+    margin-top: 25px;
+    height: 60px;
+    width: 200px;
+    background-color: #e4bcbc;
+    font-size: 17px;
+
+    /* padding: 10px 15px; */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.newProfile__modal {
+    display: flex;
+    flex-direction: column;
+    background-color: #deffbe;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    font-size: 15px;
+}
+
+.newProfile__label,
+.newProfile__input {
+  display: block; /* Располагаем элементы построчно */
+  width: 100%; /* Занимаем всю доступную ширину */
+  margin-bottom: 10px; /* Добавляем отступ между элементами */
+  box-sizing: border-box; /* Важно для правильного расчета ширины */
+}
+
+.newProfile__input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box; /* Важно для правильного расчета ширины */
+}
+.newProfile__button {
+    margin-left: 17%;
+}
+
+.bankAccountModal {
+    display: none;
+}
+
+.account-window {
+    display: flex;
+    width: 930px; /* Ширина окна аккаунта */
+    margin: 20px auto; /* Центрирование окна */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    font-family: sans-serif;
+    background-color: #deffbe;
+    /* display: none; */
+}
+
+.account-info {
+    flex: 1; /* Занимает большую часть пространства слева */
+    padding-right: 20px;
+    border-right: 1px solid #eee;
+}
+
+.info-item {
+    margin-bottom: 10px;
+}
+
+.account-buttons {
+    margin-top: 20px;
+    /* height: 200px; */
+}
+
+.account-buttons button {
+    /* padding: 0px 0px; */
+    margin-right: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 180px;
+    height: 60px;
+}
+
+.account-buttons input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 100px; /* Задаем ширину поля ввода */
+    height: 40px;
+    font-size: 20px;
+}
+
+#deposit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+#deposit-btn:hover {
+    background-color: #28f04d;
+}
+
+#withdraw-btn {
+    /* margin-top: 0px; */
+    background-color: #fb1100;
+    color: white;
+}
+#withdraw-btn:hover {
+    background-color: #f69c9c;
+}
+.transaction-history {
+    flex: 1; /* Занимает пространство справа */
+    /* padding-left: 20px; */
+    margin-right: 30px;
+}
+
+#transaction-text {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px;
+    resize: vertical; /* Разрешаем вертикальное изменение размера */
+}
+
+.account__exit {
+    width: 150px;
+    height: 60px;
+    margin-top: 15px;
+    margin-left: 70%;
+}
+
+.enter__modal {
+    padding-top: 20px;
+    width: 300px;
+    height: 150px;
+    background-color: #deffbe;
+    text-align: center;
+    font-size: 20px;
+    display: none;
+}
+.enter__modal input {
+    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.enter__modal button {
+    margin-top: 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+.active {
+    display: block;
+}
+.hide {
+    display: none;
+}

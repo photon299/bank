@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <h1 class="header">Bank of America</h1>
+    <div class="wrapper">
+        <div class="account-window hide">
+            <div class="account-info">
+                <div class="info-item">Имя: <span id="user-name"></span></div>
+                <div class="info-item">Фамилия: <span id="user-surname"></span></div>
+                <div class="info-item">Возраст: <span id="user-age"></span></div>
+                <div class="info-item">Баланс: <span id="user-balance"></span></div>
+                <div class="account-buttons">
+                    <!-- <button id="deposit-btn">Внести депозит</button>
+                    <button id="withdraw-btn">Снять деньги</button> -->
+                    <div class="button-row">
+                        <button id="deposit-btn">Внести депозит</button>
+                        <input type="number" id="deposit-input" placeholder="Сумма">
+                    </div>
+                    <div class="button-row">
+                        <button id="withdraw-btn">Снять деньги</button>
+                        <input type="number" id="withdraw-input" placeholder="Сумма">
+                    </div>
+                </div>
+            </div>
+            <div class="transaction-history">
+                <h3>История транзакций</h3>
+                <textarea id="transaction-text" readonly></textarea>
+                <button class="account__exit">Выйти</button>
+            </div>
+        </div>
+        <div class="enter__modal">
+            <span>Введите пароль</span><br>
+            <input type="text"><br>
+            <button class="enter-btn"></button>
+        </div>
+    </div>
 </body>
 </html>
