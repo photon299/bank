@@ -17,8 +17,6 @@
                 <div class="info-item">Возраст: <span id="user-age"></span></div>
                 <div class="info-item">Баланс: <span id="user-balance"></span></div>
                 <div class="account-buttons">
-                    <!-- <button id="deposit-btn">Внести депозит</button>
-                    <button id="withdraw-btn">Снять деньги</button> -->
                     <div class="button-row">
                         <button id="deposit-btn">Внести депозит</button>
                         <input type="number" id="deposit-input" placeholder="Сумма">
@@ -32,13 +30,19 @@
             <div class="transaction-history">
                 <h3>История транзакций</h3>
                 <textarea id="transaction-text" readonly></textarea>
-                <button class="account__exit">Выйти</button>
+                <div class="account__btns">
+                    <button class="delete__account-btn">Удалить учетную запись</button>
+                    <button class="account__exit">Выйти</button>
+                </div>
             </div>
         </div>
         <div class="enter__modal">
             <span>Введите пароль</span><br>
             <input type="text"><br>
-            <button class="enter-btn"></button>
+            <div class="enterBtns__block">
+                <button class="submit__parole-btn">&#x2713</button>
+                <button class="exit-log">&times</button>
+            </div>
         </div>
     </div>
 </body>
